@@ -3,7 +3,7 @@ const { Sequelize, belongsToMany,hasOne} = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 require('dotenv').config()
-/* const {
+const {
   DB_USER, DB_PASS, DB_HOST,
 } = process.env;
 
@@ -11,8 +11,8 @@ require('dotenv').config()
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASS}@${DB_HOST}/back`,{
   logging: false,
 
-}) */
-
+})
+/* 
 const {
   DATABASE_URL,
   } = process.env;
@@ -28,7 +28,7 @@ const sequelize = new Sequelize(DATABASE_URL,{
       }
     }
 
-})
+}) */
 
 
 const basename = path.basename(__filename);
